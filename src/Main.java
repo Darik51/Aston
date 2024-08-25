@@ -7,7 +7,6 @@ import Lesson_7.Task_2.Circle;
 import Lesson_7.Task_2.Rectangle;
 import Lesson_7.Task_2.Triangle;
 
-//import static Lesson_7.Task_2.Shape.printShapeInfo;
 
 
 public class Main {
@@ -70,6 +69,7 @@ public class Main {
         System.out.println("Задание №2");
         System.out.println("----------");
 
+        // Создаем фигуры
         Shape circle = new Circle(5, "Red", "Black");
         Shape rectangle = new Rectangle(4, 6, "Blue", "Green");
         Shape triangle = new Triangle(3, 4, 5, "Yellow", "Purple");

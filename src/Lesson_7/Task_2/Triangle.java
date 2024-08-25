@@ -38,6 +38,7 @@ public class Triangle implements Shape {
 
     @Override
     public void printShapeInfo() {
+        System.out.println("Фигура: Треугольник");
         System.out.println("Периметр: " + calculatePerimeter());
         System.out.println("Площадь: " + calculateArea());
         System.out.println("Цвет заливки: " + getFillColor());

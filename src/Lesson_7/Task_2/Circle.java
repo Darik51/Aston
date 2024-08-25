@@ -33,6 +33,7 @@ public class Circle implements Shape {
 
     @Override
     public void printShapeInfo() {
+        System.out.println("Фигура: Круг");
         System.out.println("Периметр: " + calculatePerimeter());
         System.out.println("Площадь: " + calculateArea());
         System.out.println("Цвет заливки: " + getFillColor());
