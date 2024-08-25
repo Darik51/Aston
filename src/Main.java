@@ -2,11 +2,19 @@ import Lesson_7.Task_1.Animal;
 import Lesson_7.Task_1.Cat;
 import Lesson_7.Task_1.Dog;
 import Lesson_7.Task_1.Bowl;
+import Lesson_7.Task_2.Shape;
+import Lesson_7.Task_2.Circle;
+import Lesson_7.Task_2.Rectangle;
+import Lesson_7.Task_2.Triangle;
+
+//import static Lesson_7.Task_2.Shape.printShapeInfo;
 
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("--------------------");
+        System.out.println("----------");
+        System.out.println("Задание №1");
+        System.out.println("----------");
 
         Animal elephant = new Animal(); // Создаем объект класса животное
         // Животное выполняет действия (бег и плавание)
@@ -38,7 +46,7 @@ public class Main {
         // Коты едят из миски
         cat1.eat(bowl, 10);
         cat1.eat(bowl, 10);
-        cat2.eat(bowl,20);
+        cat2.eat(bowl, 20);
 
         // Добавляем еды в миску
         bowl.addFood(40);
@@ -46,7 +54,7 @@ public class Main {
 
         // Создаем массив котов
         Cat[] cats = {new Cat(), new Cat(), new Cat(), new Cat(), new Cat()};
-        for (Cat cat: cats){
+        for (Cat cat : cats) {
             cat.eat(bowl, 15);
         }
         System.out.println("--------------------");
@@ -54,7 +62,21 @@ public class Main {
 
         // Выводим в консоль количество созданных животных, котов и собак
         System.out.println("Всего животных: " + Animal.animalCount);
-        System.out.println("Всего котов: " + Cat.catCount);
-        System.out.println("Всего собак: " + Dog.dogCount);
+        System.out.println("Котов: " + Cat.catCount);
+        System.out.println("Собак: " + Dog.dogCount);
+
+
+        System.out.println("----------");
+        System.out.println("Задание №2");
+        System.out.println("----------");
+
+        Shape circle = new Circle(5, "Red", "Black");
+        Shape rectangle = new Rectangle(4, 6, "Blue", "Green");
+        Shape triangle = new Triangle(3, 4, 5, "Yellow", "Purple");
+
+        // Вывод информации о фигурах
+        circle.printShapeInfo();
+        rectangle.printShapeInfo();
+        triangle.printShapeInfo();
     }
 }
