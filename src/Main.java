@@ -6,7 +6,14 @@ import Lesson_7.Task_1.Bowl;
 
 public class Main {
     public static void main(String[] args) {
-        // Создаем объекты котов и собак
+        System.out.println("--------------------");
+
+        Animal elephant = new Animal(); // Создаем объект класса животное
+        // Животное выполняет действия (бег и плавание)
+        elephant.swim(160);
+        elephant.run(-50);
+
+        // Создаем объекты классов кот и собака
         Cat cat1 = new Cat();
         Cat cat2 = new Cat();
         Dog dog1 = new Dog();

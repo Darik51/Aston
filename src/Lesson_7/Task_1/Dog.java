@@ -28,7 +28,7 @@ public class Dog extends Animal{
             if (distance < 10) {
                 System.out.println("Собака проплыла " + distance + " м.");
             } else {
-                System.out.println("Дистанция слишком большая. " + "Собака может проплыть до 10 м.");
+                System.out.println("Дистанция слишком большая. Собака может проплыть до 10 м.");
             }
         } else {System.out.println("Введите дистанцию больше 0");}
     }
