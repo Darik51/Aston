@@ -28,7 +28,7 @@ public class Main {
         Dog dog2 = new Dog();
 
         // Коты и собаки выполняют действия (бег и плавание)
-        System.out.println("--------------------");
+        System.out.println();
         cat1.run(150);
         cat1.swim(5);
         cat2.run(350);
@@ -37,7 +37,7 @@ public class Main {
         dog1.swim(5);
         dog2.run(-100);
         dog2.swim(15);
-        System.out.println("--------------------");
+        System.out.println();
 
 
         // Создаем миску с едой
@@ -50,14 +50,14 @@ public class Main {
 
         // Добавляем еды в миску
         bowl.addFood(40);
-        System.out.println("--------------------");
+        System.out.println();
 
         // Создаем массив котов
         Cat[] cats = {new Cat(), new Cat(), new Cat(), new Cat(), new Cat()};
         for (Cat cat : cats) {
             cat.eat(bowl, 15);
         }
-        System.out.println("--------------------");
+        System.out.println();
 
 
         // Выводим в консоль количество созданных животных, котов и собак
